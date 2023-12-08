@@ -5,7 +5,7 @@ module.exports = withMT({
   theme: {
     extend: {
       fontFamily: {
-        russoOne: ["Russo One"],
+        russonOne: ["Russon One"],
         inter: ["Inter"],
         petitFormal: ["Petit Formal Script"]
       },
