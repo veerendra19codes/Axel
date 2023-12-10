@@ -4,7 +4,7 @@ import { Switch } from "@material-tailwind/react";
 
 const Header = () => {
     return (
-        <div className="mx-auto pt-16">
+        <div className="mx-auto pt-12">
             <div className="grid grid-cols-2 justify-items-left items-center">
                 {/* left start  */}
                 <div className="w-4/5 pl-24 mt-20 justify-self-start">
@@ -25,7 +25,7 @@ const Header = () => {
                         </p>
                     </div>
                     <div className="pb-20">
-                        <button className="pushable mt-4">
+                        <button className="pushable mt-8 mr-[130px]">
                             <span className="front">Start now</span>
                         </button>
                     </div>

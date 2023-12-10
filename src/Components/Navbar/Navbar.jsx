@@ -29,7 +29,7 @@ const Navbar = () => {
                 }>
                 <div className="grid grid-cols-2 justify-items-center items-center content-center w-full">
                     <div>
-                        <img className="h-10" src={logo} alt="logo-img"></img>
+                        <img className="h-10 mr-[280px]" src={logo} alt="logo-img"></img>
                     </div>
                     <div className="flex flex-row items-center w-full">
                         {navbarData.map((item) => {
