@@ -11,9 +11,9 @@ const Home = () => {
                 <Navbar />
                 <Header />
             </WrapperContainer>
-            <WrapperContainer>
-                <MidFilterSection />
-            </WrapperContainer>
+            {/* <WrapperContainer> */}
+            <MidFilterSection />
+            {/* </WrapperContainer> */}
         </div>
     )
 }
