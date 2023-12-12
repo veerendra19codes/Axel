@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar'
 import Header from '../Header/Header'
 import WrapperContainer from '../WrapperContainer/WrapperContainer'
 import MidFilterSection from '../MidSection/MidFilterSection'
+import MidComponentParent from '../MidSection/MidComponentParent'
 
 const Home = () => {
     return (
@@ -11,9 +12,10 @@ const Home = () => {
                 <Navbar />
                 <Header />
             </WrapperContainer>
-            {/* <WrapperContainer> */}
-            <MidFilterSection />
-            {/* </WrapperContainer> */}
+            <WrapperContainer>
+                <MidFilterSection />
+                <MidComponentParent />
+            </WrapperContainer>
         </div>
     )
 }

@@ -27,7 +27,7 @@ const Navbar = () => {
                     scroll ? "h-16 w-full fixed flex transition items-center ease-in-out duration-500 bg-white-200 rounded-sm bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 z-20"
                         : "bg-transparent h-16 w-full fixed transition ease-in-out duration-500 flex items-center z-20"
                 }>
-                <div className="grid grid-cols-2 justify-items-center items-center content-center w-full">
+                <div className="grid grid-cols-2 justify-items-center items-center content-center w-full mx-auto">
                     <div>
                         <img className="h-10 mr-[280px]" src={logo} alt="logo-img"></img>
                     </div>

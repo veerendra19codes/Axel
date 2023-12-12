@@ -41,16 +41,15 @@ const MidFilterSection = () => {
     }, []);
 
     return (
-        <div className=" h-[800px] min-[800px] max-[800px] mt-60 pt-0 pb-8 bg-wrapperBg container mx-auto px-4 w-full bg-cover bg-no-repeat bg-center rounded-xl -translate-y-0 drop-shadow-2xl">
-
-
+        <div className=" h-[800px] min-[800px] max-[800px] mt-60 pt-0 pb-8 ">
             <div className=" h-full min-[800px] max-[800px] mt-4 pt-0 pb-8 mx-auto px-4 w-full" id="news">
+
                 <div className="h-[850px] grid grid-cols-2 justify-items-center items-center">
                     <motion.div className="w-4/5 mx-auto pl-24"
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        transition={{ duration: 1.5 }}
+                        transition={{ duration: 1 }}
                         variants={{ visible: { opacity: 1, scale: 1 }, hidden: { opacity: 0, scale: 0 } }}
                     >
                         <h2 className="w-96 text-6xl font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none 
