@@ -1,8 +1,13 @@
 import chair from "../assets/images/chairPurple.png";
 import sofa2 from "../assets/images/roseChair.png";
 import sofa3 from "../assets/images/gray-chair.png";
-import phone1 from "../assets/images/bedRoom.png";
+// import phone1 from "../assets/images/bedRoom.png";
 import blueSofa from "../assets/images/blueSofa.png";
+import bedroom2 from "../assets/images/bedroom2.png"
+import livingroom from "../assets/images/livingroom.png"
+import office from "../assets/images/office.png"
+import kitchen from "../assets/images/kitchen.png"
+import kidsroom from "../assets/images/kidsroom.png"
 
 export const navbarData = [
   {
@@ -125,7 +130,7 @@ export const tabsData = [
     label: "Bedroom",
     value: "bedroom",
     desc: `AxeL is your best firend for interior design, download the app and feel free to explore beautifule modern and premium designs.`,
-    img: phone1,
+    img: bedroom2,
     linkText: "See more",
   },
   {
@@ -133,7 +138,7 @@ export const tabsData = [
     label: "LivingRoom",
     value: "livingroom",
     desc: "AxeL is your best firend for interior design, download the app and feel free to explore beautifule modern and premium designs.",
-    img: phone1,
+    img: livingroom,
     linkText: "See more",
   },
 
@@ -142,7 +147,7 @@ export const tabsData = [
     label: "Kitchen",
     value: "kitchen",
     desc: `AxeL is your best firend for interior design, download the app and feel free to explore beautifule modern and premium designs.`,
-    img: phone1,
+    img: kitchen,
     linkText: "See more",
   },
 
@@ -151,7 +156,7 @@ export const tabsData = [
     label: "Office",
     value: "office",
     desc: ` AxeL is your best firend for interior design, download the app and feel free to explore beautifule modern and premium designs.`,
-    img: phone1,
+    img: office,
     linkText: "See more",
   },
 
@@ -160,10 +165,11 @@ export const tabsData = [
     label: "KidsRoom",
     value: "kidsroom",
     desc: `AxeL is your best firend for interior design, download the app and feel free to explore beautifule modern and premium designs.`,
-    img: phone1,
+    img: kidsroom,
     linkText: "See more",
   },
 ];
+
 export const cardData = [
   {
     id: "0",

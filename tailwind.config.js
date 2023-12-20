@@ -10,6 +10,8 @@ module.exports = withMT({
         petitFormal: ["Petit Formal Script"]
       },
       colors: {
+        royalBlue: "#4169e1",
+        darkBlue: "#0d1117",
         dark: "#0d1117",
       }
     },
