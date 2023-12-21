@@ -9,24 +9,32 @@ import FurnitureFlow from '../MidSection/FurnitureFlow'
 import NewsLetter from "../../Components/MidSection/NewsLetter"
 import Cards from '../MidSection/Cards'
 import Footer from "../Footer/Footer";
+import PopUpButton from '../PopUpButton/PopUpButton'
 
 const Home = () => {
     return (
-        <div>
-            <WrapperContainer navHead>
-                <Navbar />
-                <Header />
-            </WrapperContainer>
-            <WrapperContainer>
-                <MidFilterSection />
-                <MidComponentParent />
-                <TabsComponent />
-                <FurnitureFlow />
-                <Cards />
-                <NewsLetter />
-            </WrapperContainer>
-            <div>
-                <Footer />
+        <div className="relative">
+            <div className="fixed right-4 bottom-2 z-20">
+                <PopUpButton></PopUpButton>
+            </div>
+            <div className="bg-white">
+                <WrapperContainer navHead>
+                    <Navbar />
+                    <Header />
+                </WrapperContainer>
+            </div>
+            <div className="bg-gray-100 w-full">
+                <WrapperContainer>
+                    <MidFilterSection />
+                    <MidComponentParent />
+                    <TabsComponent />
+                    <FurnitureFlow />
+                    <Cards />
+                    <NewsLetter />
+                </WrapperContainer>
+                <div>
+                    <Footer />
+                </div>
             </div>
         </div>
     )
