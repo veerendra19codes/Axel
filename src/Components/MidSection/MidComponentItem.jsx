@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { room } from '../../DataforPage/dummyData'
 import { motion } from "framer-motion"
+import { ThemeContext } from '../../App'
+
 
 const MidComponentItem = ({ title, img, text, reverse }) => {
+    const { theme, toggleTheme } = useContext(ThemeContext);
+
     return (
         <div className="pb-32" id="company">
             {reverse ? (
@@ -13,10 +17,10 @@ const MidComponentItem = ({ title, img, text, reverse }) => {
                         viewport={{ once: true }}
                         transition={{ duration: 1 }}
                         variants={{ visible: { opacity: 1, scale: 1 }, hidden: { opacity: 0, scale: 0 } }}>
-                        <h2 className="text-6xl pt-10 pb-4 font-bold font-inter no-underline align-midd;e tracking-wide normal-case leading-none text-dark">
+                        <h2 className={theme === "light" ? "text-6xl pt-10 pb-4 font-bold font-inter no-underline align-midd;e tracking-wide normal-case leading-none text-dark text-start" : "text-6xl pt-10 pb-4 font-bold font-inter no-underline align-midd;e tracking-wide normal-case leading-none text-white text-start"} >
                             {title}
                         </h2>
-                        <p className="text-2xl w-full pb-4 font-normal font-inter no-underline align-midd;e tracking-wide normal-case leading-none text-dark">
+                        <p className={theme === "light" ? "text-2xl w-full pb-4 font-normal font-inter no-underline align-midd;e tracking-wide normal-case leading-none text-dark text-start" : "text-2xl w-full pb-4 font-normal font-inter no-underline align-midd;e tracking-wide normal-case leading-none text-white text-start"} >
                             {text}
                         </p>
                         <button className="pushable mt-4">
@@ -43,7 +47,7 @@ const MidComponentItem = ({ title, img, text, reverse }) => {
                     id="room"
                     className="flex flex-row-reverse justify-around items-center w-full">
                     <div>
-                        <h2 className="text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark">
+                        <h2 className={theme === "light" ? "text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark" : "text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"}>
                             {title}
                         </h2>
 
@@ -58,7 +62,7 @@ const MidComponentItem = ({ title, img, text, reverse }) => {
                                                 alt={item.name}
                                             ></img>
                                         </div>
-                                        <p className="text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark content-center self-center">{item.name}</p>
+                                        <p className={theme === "light" ? "text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark content-center self-center" : "text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-white content-center self-center"} >{item.name}</p>
                                     </div>
 
                                 )
@@ -70,8 +74,9 @@ const MidComponentItem = ({ title, img, text, reverse }) => {
                         <img className="h-[600px] pt-4 hover:rotate-[-6deg] duration-1000 cursor-pointer" src={img} alt="phone"></img>
                     </div>
                 </div>
-            )}
-        </div>
+            )
+            }
+        </div >
     )
 }
 

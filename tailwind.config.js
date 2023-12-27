@@ -17,6 +17,7 @@ module.exports = withMT({
     },
     backgroundImage: {
       wrapperBg: "url('assets/images/wrapperBackground.svg')",
+      wrapperDark: "url('assets/images/wrapperDark.svg')",
     },
     container: {
       screens: {
@@ -26,6 +27,18 @@ module.exports = withMT({
         xl: "1440px",
         "2xl": "1800px", //custom breakpoint
       },
+    },
+    screens: {
+      "2xl": { max: "1535px" },
+      // @media (max-width: 1535px) { ... }
+
+      xl: { max: "1279"},
+
+      lg: { max: "1023"},
+
+      md: { max: "767"},
+
+      sm: { max: "639"},
     },
   },
   plugins: [],

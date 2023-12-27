@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import MidComponentItem from './MidComponentItem'
 import MidPhone1 from "../../assets/images/MidComponentPhone.png"
 import MidPhone2 from "../../assets/images/midPhone2.png"
+import { ThemeContext } from '../../App'
+
 
 const MidComponentParent = () => {
+    const { theme, toggleTheme } = useContext(ThemeContext);
+
     return (
         <div>
             <MidComponentItem

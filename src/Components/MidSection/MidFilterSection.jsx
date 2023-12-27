@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import MidButton from './MidButton'
 import { sliderData } from '../../DataforPage/dummyData';
 import MidChild from './MidChild';
 import { motion } from "framer-motion"
+import { ThemeContext } from '../../App'
+
 
 const MidFilterSection = () => {
+    const { theme, toggleTheme } = useContext(ThemeContext);
+
 
     const buttons = [
         {
@@ -52,8 +56,7 @@ const MidFilterSection = () => {
                         transition={{ duration: 1 }}
                         variants={{ visible: { opacity: 1, scale: 1 }, hidden: { opacity: 0, scale: 0 } }}
                     >
-                        <h2 className="w-96 text-6xl font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none 
-                    text-dark">
+                        <h2 className={theme === "light" ? "w-96 text-6xl font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark" : "w-96 text-6xl font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"} >
                             Check out some of the news
                         </h2>
                         <div className="mr-20">
@@ -66,7 +69,7 @@ const MidFilterSection = () => {
                 </div>
 
             </div >
-        </div>
+        </div >
     )
 }
 
