@@ -2,7 +2,7 @@ import React from 'react'
 
 const MidButton = ({ buttons, filter, selected }) => {
     return (
-        <div className="flex items-center pt-8">
+        <div className="flex items-center pt-8 sm:pt-4">
             {buttons.map((button) => {
                 return (
                     <button className={selected === button.id ? "pushable mr-4" : "pushable mr-4"}

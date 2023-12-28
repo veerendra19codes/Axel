@@ -21,33 +21,33 @@ const Cards = () => {
     return (
         <div id="demo">
             <div className="text-center">
-                <h2 className={theme === "light" ? "text-dark text-6xl font-bold pt-20 no-underline font-inter align-middle tracking-wide normal-case leading-none" : "text-white text-6xl font-bold pt-20 no-underline font-inter align-middle tracking-wide normal-case leading-none"} >
+                <h2 className={theme === "light" ? "text-dark text-6xl font-bold pt-20 no-underline font-inter align-middle tracking-wide normal-case leading-none sm:text-3xl sm:pt-8" : "text-white text-6xl font-bold pt-20 no-underline font-inter align-middle tracking-wide normal-case leading-none sm:text-3xl sm:pt-8"} >
                     Request a demo
                 </h2>
-                <p className={theme === "light" ? "text-dark text-2xl font-normal pt-10 no-underline font-inter align-middle tracking-wide leading-none" : "text-white text-2xl font-normal pt-10 no-underline font-inter align-middle tracking-wide leading-none"} >
+                <p className={theme === "light" ? "text-dark text-2xl font-normal pt-10 no-underline font-inter align-middle tracking-wide leading-none sm:text-base sm:pt-2" : "text-white text-2xl font-normal pt-10 no-underline font-inter align-middle tracking-wide leading-none sm:text-base sm:pt-2"} >
                     Explore all the nice stuff that Axel is providing and much more...{" "}
                 </p>
                 <div className="w-full flex flex-row items-center justify-evenly pt-10">
                     <div>
                         <img
-                            className="h-12 cursor-pointer"
+                            className="h-12 cursor-pointer sm:h-8"
                             src={googlePlay}
                             alt="googleApp"
                         ></img>
                     </div>
                     <div>
                         <img
-                            className="h-12 cursor-pointer"
+                            className="h-12 cursor-pointer sm:h-8"
                             src={appleStore}
                             alt="applestore"
                         ></img>
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-3 items-center gap-8 content-between w-full pt-32">
+            <div className="grid grid-cols-3 sm:flex sm:flex-col items-center gap-8 sm:gap-4 content-between w-full pt-32 sm:pt-12">
                 {cardData.map((item) => {
                     return (
-                        <motion.div className="mx-auto pl-20" key={item.id} initial="hidden"
+                        <motion.div className="mx-auto pl-20 sm:p-4" key={item.id} initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
                             transition={{ duration: 1.5 }}
@@ -58,14 +58,14 @@ const Cards = () => {
                         >
                             <Card className={
                                 item.id === "1"
-                                    ? "w-80 bg-dark border border-white"
-                                    : "w-80 bg-white"
+                                    ? "w-80 bg-dark border border-white sm:w-64"
+                                    : "w-80 bg-white sm:w-64"
                             }>
                                 <CardBody className="text-center">
-                                    <Typography variant="h5" className={item.id === "1" ? "mg-2 font-inter leading-normal no-underline align-middle tracking-wide normal-case text-white" : "mb-2 font-inter leading-normal no-underline align-middle tracking-wide normal-case text-dark"}>
+                                    <Typography variant="h5" className={item.id === "1" ? "mb-2 font-inter leading-normal no-underline align-middle tracking-wide normal-case text-white sm:text-lg" : "mb-2 font-inter leading-normal no-underline align-middle tracking-wide normal-case text-dark sm:text-lg"}>
                                         {item.title}
                                     </Typography>
-                                    <Typography className={item.id === "1" ? "mg-2 font-inter font-light leading-normal no-underline align-middle tracking-wide normal-case h-32 text-white" : "mb-2 font-inter font-light leading-normal no-underline align-middle tracking-wide normal-case h-32 text-dark"}
+                                    <Typography className={item.id === "1" ? "mb-2 font-inter font-light leading-normal no-underline align-middle tracking-wide normal-case h-32 text-white sm:m-0 sm:text-sm" : "mb-2 font-inter font-light leading-normal no-underline align-middle tracking-wide normal-case h-32 text-dark sm:m-0 sm:text-sm"}
                                     >
                                         {item.text}
                                     </Typography>

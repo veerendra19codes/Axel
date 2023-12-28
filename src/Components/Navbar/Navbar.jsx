@@ -34,7 +34,7 @@ const Navbar = () => {
                     <div>
                         <img className="h-10 mr-[280px]" src={logo} alt="logo-img"></img>
                     </div>
-                    <div className="flex flex-row items-center w-full">
+                    <div className="flex flex-row items-center w-full ml-[300px]">
                         {navbarData.map((item) => {
                             return (
                                 <div key={item.id}>

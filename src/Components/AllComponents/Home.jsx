@@ -16,7 +16,7 @@ const Home = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
 
     return (
-        <div className={theme === "light" ? "relative" : "relative bg-dark"} >
+        <div className={theme === "light" ? "relative sm:w-full sm:overflow-x-hidden" : "relative bg-dark sm:w-full sm:overflow-x-hidden"} >
             <div className="fixed right-4 bottom-2 z-20">
                 <PopUpButton></PopUpButton>
             </div>
