@@ -10,7 +10,7 @@ const Header = () => {
     console.log(theme);
 
     return (
-        <div className={theme === "light" ? "mx-auto pt-12 w-full" : "w-full mx-auto pt-12 bg-dark"} >
+        <div className={theme === "light" ? "mx-auto pt-12 w-full sm:p-0" : "w-full mx-auto pt-12 bg-dark sm:p-0"} >
             <div className="grid grid-cols-2 justify-items-left items-center sm:flex sm:flex-col">
                 {/* left start  */}
                 <div className="sm:w-full sm:p-4 w-4/5 pl-24 mt-20 sm:mt-8 justify-self-start">

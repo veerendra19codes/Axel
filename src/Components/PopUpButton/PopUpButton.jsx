@@ -37,7 +37,7 @@ const PopUpButton = () => {
                     // whileHover={{ scale: "1.1" }}
                     variants={itemVariants}
                     onClick={handleClick}
-                    className="rounded-full flex text-white flex-col fixed right-14 bottom-6 z-20 bg-blue-600 px-6 py-4 cursor-pointer hover:bg-blue-200 duration-700 ease-in-out" >
+                    className="rounded-full flex text-white flex-col fixed right-14 bottom-6 sm:right-4 sm:bottom-4 z-20 bg-blue-600 px-6 py-4 cursor-pointer hover:bg-blue-200 duration-700 ease-in-out" >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="#fff"
